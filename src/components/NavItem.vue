@@ -18,6 +18,11 @@
         },
         isActive: Boolean,
       },
+      watch:{
+        isActive: function(newVal, oldVal) { // watch it
+              console.log('Prop changed: ', newVal, ' | was: ', oldVal)
+        }
+      }
     }
   </script>
   
