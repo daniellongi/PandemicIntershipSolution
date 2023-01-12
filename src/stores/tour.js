@@ -2,7 +2,7 @@ import { defineStore } from 'pinia'
 import axios from 'axios'
 
 const tour_endpoint = 'https://tapntour-wk-db.glyfo.workers.dev/api/tours'
-const tourbyid_endpoint = 'https://tapntour-wk-db.glyfo.workers.dev/api/tours/detail/'
+const tourbyid_endpoint = 'https://tapntour-wk-db.glyfo.workers.dev/api/tours/'
 
 export const useTourStore = defineStore({
   id: 'tour',
