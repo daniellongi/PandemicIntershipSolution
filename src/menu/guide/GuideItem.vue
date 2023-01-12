@@ -14,12 +14,15 @@
                 <!-- <span class="w-1 h-1 mx-1.5 bg-gray-500 rounded-full dark:bg-gray-400"></span> -->
                 <a href="#" class="text-sm font-medium text-gray-900 underline hover:no-underline dark:text-white" v-if="item.review" >{{ item.review }} reviews</a>
                 <a href="#" class="text-sm font-medium text-gray-900 underline hover:no-underline dark:text-white" v-else >0 reviews</a>
+                <p class="ml-2 text-sm font-medium text-gray-500 dark:text-gray-400">Rating</p>
+                <p class="ml-2 text-sm font-medium text-gray-500 dark:text-gray-400" v-if="item.rating" >{{item.rating}} out of 10</p>
+
             </div>
           </dt>
-         
+          
         </div>
       </dl>
-
+      
     </div>
   </article>  
 </template>
