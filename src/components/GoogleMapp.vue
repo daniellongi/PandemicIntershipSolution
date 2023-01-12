@@ -20,7 +20,7 @@
       const londonEyeCoordinates = {lat: 51.503399, lng:  -0.119519}
       const buckinghamPalace = {lat: 51.501476, lng: -0.140634}
       const allCoordinates = [bigBenCoordinates, londonEyeCoordinates, buckinghamPalace]
-      const apiKey = import.meta.env.VITE_API_GOOGLE_API
+      const apiKey = process.env.GOOGLE_API
       const center = {lat: 51.509865, lng: -0.118092}
       return { allCoordinates, center, apiKey };
     },
